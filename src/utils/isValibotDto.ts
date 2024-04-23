@@ -1,0 +1,1 @@
+export const isValibotDto = (val: any) => val?.isValibotDto;
