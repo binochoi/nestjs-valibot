@@ -15,6 +15,11 @@ import { ValibotValidationPipe } from 'nestjs-valibot';
 })
 export class AppModule {}
 ```
+`or`
+```ts
+// main.ts
+app.useGlobalPipes(new ValibotValidationPipe());
+```
 `2. create DTO`
 ```ts
 // app.module.ts
@@ -26,11 +31,6 @@ const schema = v.object({
 });
 
 export class GetRowDto extends createDto(schema) {}
-```
-`or`
-```ts
-// main.ts
-app.useGlobalPipes(new ValibotValidationPipe());
 ```
 
 `3. use it`
