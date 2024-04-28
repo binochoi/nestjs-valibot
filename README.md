@@ -48,3 +48,7 @@ export class AppController {
 }
 
 ```
+
+## TODO
+- [x] create pipe to connect valibot output to nestjs
+- [ ] create module that is customizable
