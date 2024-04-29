@@ -1,6 +1,6 @@
 import { BadRequestException, HttpStatus } from "@nestjs/common";
 import { type ValiError } from 'valibot';
-import { GlobalOptions } from "./types/options";
+import type { GlobalOptions } from "./types/options";
 
 export class Exception extends BadRequestException {
     static options: GlobalOptions;
