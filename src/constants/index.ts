@@ -1,0 +1,1 @@
+export const VALIBOT_OPTIONS = Symbol('VALIBOT_OPTIONS');

@@ -1,6 +1,6 @@
 {
   "name": "nestjs-valibot",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "",
   "files": [
     "dist"
@@ -39,10 +39,6 @@
     "./createDto": {
       "types": "./dist/createDto.d.cts",
       "require": "./dist/createDto.cjs"
-    },
-    "./ValibotValidationPipe": {
-      "types": "./dist/ValibotValidationPipe.d.cts",
-      "require": "./dist/ValibotValidationPipe.cjs"
     }
   },
   "publishConfig": {
