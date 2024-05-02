@@ -14,4 +14,4 @@ export const createDto = <
         public static isValibotDto = true;
         public static schema = schema;
         public static create = (input: unknown) => parse(schema, input);
-    } as ValibotDto
+    } as ValibotDto<TInput>
