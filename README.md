@@ -3,6 +3,17 @@
 ### ValibotValidationPipe
 `1. define valibot pipe globally`
 ```ts
+@Module({
+  imports: [
+    ValibotModule.forRoot({
+      disableErrorMessages: true,
+    }),
+  ],
+})
+export class AppModule {}
+```
+`or`
+```ts
 import { ValibotValidationPipe } from 'nestjs-valibot';
 
 @Module({
