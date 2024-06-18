@@ -1,7 +1,8 @@
 # nestjs-valibot
 ## Features
-### ValibotValidationPipe
+### How to start
 `1. define valibot pipe globally`
+it'll be initialize ValibotValidationPipe internally
 ```ts
 @Module({
   imports: [
@@ -57,7 +58,15 @@ export class AppController {
     return page;
   }
 }
-
+```
+`4. using onto frontend`
+```ts
+try {
+  const data = new GetRowDto(input);
+} catch(err: ValiError) {}
+```
+```ts
+const { issues, success } = safeParse(GetRowDto.schema);
 ```
 
 ## TODO
