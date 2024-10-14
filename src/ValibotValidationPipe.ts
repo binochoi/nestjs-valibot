@@ -1,4 +1,4 @@
-import { ArgumentMetadata, HttpException, Inject, Injectable, PipeTransform } from '@nestjs/common'
+import { ArgumentMetadata, Inject, Injectable, PipeTransform } from '@nestjs/common'
 import { ValibotDto } from './createDto';
 import { isValibotDto } from './utils/isValibotDto';
 import { validate } from './utils/validate';
