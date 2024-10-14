@@ -1,4 +1,8 @@
 # nestjs-valibot
+## Support
+```bash
+nestjs-valibot@0.0.x -> 0.30.0
+```
 ## Features
 ### How to start
 `1. define valibot pipe globally`
@@ -72,3 +76,5 @@ const { issues, success } = safeParse(GetRowDto.schema);
 ## TODO
 - [x] create pipe to connect valibot output to nestjs
 - [x] create module that is customizable
+- [ ] exception status code is not working
+- [ ] test instantly support breaking change of valibot
