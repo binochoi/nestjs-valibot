@@ -1,8 +1,4 @@
 # nestjs-valibot
-## Support
-```bash
-nestjs-valibot@0.0.x -> 0.30.0
-```
 ## Features
 ### How to start
 `1. define valibot pipe globally`
