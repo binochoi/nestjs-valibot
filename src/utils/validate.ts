@@ -9,8 +9,7 @@ export const validate = (
     options: GlobalOptions
 ) => {
     try {
-        parse(dto.schema, value);
-        return value;
+        return parse(dto.schema, value);
     } catch (error) {
         if(error instanceof ValiError) {
             Exception.options = options;
