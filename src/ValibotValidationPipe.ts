@@ -1,4 +1,4 @@
-import { ArgumentMetadata, Inject, Injectable, PipeTransform } from '@nestjs/common'
+import { ArgumentMetadata, BadRequestException, Inject, Injectable, PipeTransform, Response } from '@nestjs/common'
 import { ValibotDto } from './createDto';
 import { isValibotDto } from './utils/isValibotDto';
 import { validate } from './utils/validate';
@@ -12,7 +12,7 @@ export class ValibotValidationPipe implements PipeTransform {
     constructor(
         private readonly dtoOrOptions?: ValibotDto | GlobalOptions,
         @Inject(VALIBOT_OPTIONS)
-        private options: GlobalOptions = {},
+        private readonly options: GlobalOptions = {},
     ) {
         if(isValibotDto(this.dtoOrOptions)) {
             this.dto = this.dtoOrOptions as ValibotDto;

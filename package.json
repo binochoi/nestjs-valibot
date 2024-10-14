@@ -1,6 +1,6 @@
 {
   "name": "nestjs-valibot",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "description": "",
   "files": [
     "dist"
@@ -15,7 +15,7 @@
   "peerDependencies": {
     "@nestjs/common": ">= 8.0.0",
     "@nestjs/core": ">= 8.0.0",
-    "valibot": "^0.30.0"
+    "valibot": ">= 0.40.0"
   },
   "dependencies": {
     "typescript": "^5.4.5"
