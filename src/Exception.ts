@@ -5,7 +5,7 @@ import type { GlobalOptions } from "./types/options";
 export class Exception extends BadRequestException {
     static options: GlobalOptions;
     constructor(
-        private readonly error: ValiError,
+        private readonly error: ValiError<any>,
         ) {
         const { disableErrorMessages } = Exception.options;
         super({
