@@ -28,10 +28,14 @@ export class ValibotValidationPipe implements PipeTransform {
         if(!dto && !isValibotDto(metatype)) {
             return value;
         }
-        return validate(
-            value,
-            dto || metatype as unknown as ValibotDto,
-            options,
-        );
+        try {
+            return validate(
+                value,
+                dto || metatype as unknown as ValibotDto,
+                options,
+            );
+        } catch(err) {
+            throw new BadRequestException(err);
+        }
     }
 }
